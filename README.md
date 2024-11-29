@@ -41,7 +41,7 @@ or install the [Poetry](https://python-poetry.org/) dependency manager and run:
 The autograder runs the `pipeline` executable on some JSON files in the
 `examples` directory. If you create a new example for students, an easy way to generating the ground truth images is to run:
 
-    parallel path/to/solution/build/pipeline --width 500 --width 500 --screenshot 'reference_images/{.}@2x.png' '{}' ::: examples/file.json
-    parallel path/to/solution/build/pipeline --width 250 --width 250 --screenshot 'reference_images/{.}.png' '{}' ::: examples/file.json
+    parallel path/to/solution/build/pipeline --width 500 --height 500 --screenshot 'reference_images/{/.}@2x.png' '{}' ::: examples/file.json
+    parallel path/to/solution/build/pipeline --width 250 --height 250 --screenshot 'reference_images/{/.}.png' '{}' ::: examples/file.json
 
 using the solution `pipeline` executable. The reason images with both 250 and 500 is for students with high-DPI screens.
